@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SampleSuite">
+
+    <listeners>
+         <listener class-name="Utilities.Reporting"/>
+    </listeners>
+
+    <test name="SampleTest">
+         <parameter name="browser" value="chrome"></parameter>
+        
+         <classes>
+             <class name="TestCases.LoginPageTest"/>
+             
+          </classes>
+     </test> <!-- Test -->
+</suite> <!-- Suite -->
